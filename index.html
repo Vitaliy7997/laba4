@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">Coffee House</div>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#about">Про кав’ярню</a></li>
+                    <li><a href="#menu">Меню</a></li>
+                    <li><a href="#baristas">Баристи</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#prices">Ціни</a></li>
+                    <li><a href="#contacts" class="nav-btn">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Coffee<br>House</h1>
+                    <p>Затишна кав’ярня з ароматною кавою, свіжими десертами та смачними сніданками</p>
+                    <a href="#menu" class="btn">Переглянути меню</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Про кав’ярню</h2>
+                    <p>
+                        Coffee House — це сучасна мережа затишних кав’ярень, де можна насолодитися
+                        якісною кавою, авторськими напоями, свіжою випічкою та сніданками.
+                        Ми створюємо атмосферу комфорту для зустрічей, роботи та відпочинку.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card big">
+                        <img src="images/about1.jpg" alt="Інтер'єр кав'ярні">
+                    </div>
+                    <div class="about-card">
+                        <img src="images/about2.jpg" alt="Кава та круасан">
+                    </div>
+                </div>
+
+                <div class="features">
+                    <div class="feature-item">100% натуральна кава</div>
+                    <div class="feature-item">Свіжа випічка щодня</div>
+                    <div class="feature-item">Затишний інтер’єр</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu section" id="menu">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Меню</h2>
+                    <p>У нас великий вибір кави, десертів та сніданків на будь-який смак.</p>
+                </div>
+
+                <h3 class="sub-title">Кава</h3>
+                <div class="cards-grid">
+                    <article class="menu-card">
+                        <img src="images/espresso.jpg" alt="Еспресо">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <h4>Еспресо</h4>
+                                <span>45 грн</span>
+                            </div>
+                            <p>Класичний міцний кавовий напій з насиченим смаком та ароматом.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <img src="images/americano.jpg" alt="Американо">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <h4>Американо</h4>
+                                <span>50 грн</span>
+                            </div>
+                            <p>Легка чорна кава на основі еспресо з м’яким смаком.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <img src="images/cappuccino.jpg" alt="Капучино">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <h4>Капучино</h4>
+                                <span>65 грн</span>
+                            </div>
+                            <p>Поєднання еспресо, гарячого молока та ніжної молочної пінки.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <img src="images/latte.jpg" alt="Лате">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <h4>Лате</h4>
+                                <span>75 грн</span>
+                            </div>
+                            <p>М’який молочний напій із ніжним кавовим смаком.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <img src="images/flatwhite.jpg" alt="Флет Вайт">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <h4>Флет Вайт</h4>
+                                <span>78 грн</span>
+                            </div>
+                            <p>Насичена кава з оксамитовою текстурою молока.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <img src="images/raf.jpg" alt="Раф кава">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <h4>Раф кава</h4>
+                                <span>85 грн</span>
+                            </div>
+                            <p>Кремовий кавовий напій з вершковим смаком і легкою солодкістю.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <h3 class="sub-title">Десерти</h3>
+                <div class="cards-grid">
+                    <article class="menu-card">
+                        <img src="images/cheesecake.jpg" alt="Чизкейк">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <h4>Чизкейк</h4>
+                                <span>95 грн</span>
+                            </div>
+                            <p>Ніжний вершковий десерт з м’якою текстурою.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <img src="images/tiramisu.jpg" alt="Тірамісу">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <h4>Тірамісу</h4>
+                                <span>85 грн</span>
+                            </div>
+                            <p>Класичний італійський десерт із кремом та кавовими нотками.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <img src="images/croissant.jpg" alt="Круасан">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <h4>Круасан</h4>
+                                <span>55 грн</span>
+                            </div>
+                            <p>Хрустка випічка, яка чудово поєднується з гарячою кавою.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <img src="images/macaron.jpg" alt="Макарон">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <h4>Макарон</h4>
+                                <span>40 грн</span>
+                            </div>
+                            <p>Легкий французький десерт із ніжною начинкою.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <img src="images/tart.jpg" alt="Шоколадний тарт">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <h4>Шоколадний тарт</h4>
+                                <span>90 грн</span>
+                            </div>
+                            <p>Десерт із насиченим шоколадним смаком та хрусткою основою.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <img src="images/eclair.jpg" alt="Еклер">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <h4>Еклер</h4>
+                                <span>60 грн</span>
+                            </div>
+                            <p>Повітряне тістечко з ніжним кремом усередині.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <h3 class="sub-title">Сніданки</h3>
+                <div class="cards-grid">
+                    <article class="menu-card">
+                        <img src="images/omelette.jpg" alt="Омлет">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <h4>Омлет</h4>
+                                <span>95 грн</span>
+                            </div>
+                            <p>Свіжий омлет із зеленню та овочами для поживного сніданку.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <img src="images/syrnyky.jpg" alt="Сирники">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <h4>Сирники</h4>
+                                <span>90 грн</span>
+                            </div>
+                            <p>Домашні сирники зі сметаною, медом або джемом.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <img src="images/sandwich.jpg" alt="Сендвіч">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <h4>Сендвіч</h4>
+                                <span>80 грн</span>
+                            </div>
+                            <p>Свіжий сендвіч із сиром, овочами та запашним хлібом.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <img src="images/oatmeal.jpg" alt="Каша з фруктами">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <h4>Каша з фруктами</h4>
+                                <span>75 грн</span>
+                            </div>
+                            <p>Легка та корисна страва для ранкового початку дня.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="baristas section" id="baristas">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Наші баристи</h2>
+                    <p>
+                        У Coffee House працюють досвідчені баристи, які не просто готують каву,
+                        а створюють особливу атмосферу для кожного гостя.
+                    </p>
+                </div>
+
+                <div class="baristas-grid">
+                    <article class="barista-card">
+                        <img src="images/barista1.jpg" alt="Бариста Анна">
+                        <div class="barista-body">
+                            <h4>Анна Мельник</h4>
+                            <span>Старший бариста</span>
+                            <p>
+                                Спеціалізується на класичних кавових напоях та авторських рецептах.
+                                Працює у сфері кави понад 5 років.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="barista-card">
+                        <img src="images/barista2.jpg" alt="Бариста Максим">
+                        <div class="barista-body">
+                            <h4>Максим Коваль</h4>
+                            <span>Бариста</span>
+                            <p>
+                                Майстер альтернативних методів заварювання та латте-арту.
+                                Завжди допоможе обрати напій під ваш настрій.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="barista-card">
+                        <img src="images/barista3.jpg" alt="Бариста Софія">
+                        <div class="barista-body">
+                            <h4>Софія Бондар</h4>
+                            <span>Бариста-кондитер</span>
+                            <p>
+                                Поєднує любов до кави та десертів, створюючи ідеальні смакові
+                                поєднання для гостей кав’ярні.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery section" id="gallery">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Галерея</h2>
+                    <p>Фотографії кави, десертів, інтер’єру та атмосфери наших закладів.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <img src="images/gallery1.jpg" alt="Кава">
+                    <img src="images/gallery2.jpg" alt="Десерт">
+                    <img src="images/gallery3.jpg" alt="Інтер'єр кав'ярні">
+                    <img src="images/gallery4.jpg" alt="Атмосфера кав'ярні">
+                </div>
+            </div>
+        </section>
+
+        <section class="prices section" id="prices">
+            <div class="container prices-layout">
+                <div class="prices-list">
+                    <h2>Ціни / Акції</h2>
+
+                    <div class="price-box">
+                        <p><strong>Еспресо</strong> <span>45 грн</span></p>
+                        <p><strong>Американо</strong> <span>50 грн</span></p>
+                        <p><strong>Капучино</strong> <span>65 грн</span></p>
+                        <p><strong>Лате</strong> <span>75 грн</span></p>
+                        <p><strong>Флет Вайт</strong> <span>78 грн</span></p>
+                        <p><strong>Раф кава</strong> <span>85 грн</span></p>
+                        <p><strong>Чизкейк</strong> <span>95 грн</span></p>
+                        <p><strong>Круасан</strong> <span>55 грн</span></p>
+                    </div>
+                </div>
+
+                <div class="promo-box">
+                    <h3>-15% знижка</h3>
+                    <p>на ранкове меню з 8:00 до 11:00</p>
+                    <a href="#contacts" class="btn">Замовити</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts section" id="contacts">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Наші кав’ярні в Києві</h2>
+                    <p>Ми маємо кілька локацій у Києві, тому ви можете обрати найближчу кав’ярню.</p>
+                </div>
+
+                <div class="contacts-layout">
+                    <div class="contacts-info">
+                        <h2>Адреси</h2>
+
+                        <div class="branch-list">
+                            <div class="branch-item">
+                                <h4>Coffee House Хрещатик</h4>
+                                <p>м. Київ, вул. Хрещатик, 22</p>
+                            </div>
+
+                            <div class="branch-item">
+                                <h4>Coffee House Поділ</h4>
+                                <p>м. Київ, вул. Сагайдачного, 15</p>
+                            </div>
+
+                            <div class="branch-item">
+                                <h4>Coffee House Печерськ</h4>
+                                <p>м. Київ, бульвар Лесі Українки, 10</p>
+                            </div>
+
+                            <div class="branch-item">
+                                <h4>Coffee House Оболонь</h4>
+                                <p>м. Київ, просп. Оболонський, 26</p>
+                            </div>
+
+                            <div class="branch-item">
+                                <h4>Coffee House Позняки</h4>
+                                <p>м. Київ, вул. Драгоманова, 31</p>
+                            </div>
+
+                            <div class="branch-item">
+                                <h4>Coffee House Лук’янівка</h4>
+                                <p>м. Київ, вул. Юрія Іллєнка, 12</p>
+                            </div>
+                        </div>
+
+                        <p><strong>Телефон:</strong> +380 67 123 45 67</p>
+                        <p><strong>Email:</strong> coffeehouse@gmail.com</p>
+                        <p><strong>Графік роботи:</strong> 08:00 – 22:00</p>
+                    </div>
+
+                    <div class="contacts-map">
+                        <img src="images/map.jpg" alt="Мапа з розташуванням кав'ярень у Києві">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Coffee House. Усі права захищені.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

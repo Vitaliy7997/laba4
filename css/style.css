@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #f5efe8;
+    color: #4f3124;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    font-size: 48px;
+    color: #5b3628;
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+    max-width: 850px;
+    font-size: 19px;
+    color: #6d5548;
+}
+
+/* Header */
+.header {
+    background-color: #f3ede6;
+    border-bottom: 1px solid #e1d6cb;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    min-height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 700;
+    color: #6a3d28;
+    line-height: 1;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    flex-wrap: wrap;
+}
+
+.nav-list a {
+    font-size: 20px;
+    color: #5b3628;
+    transition: 0.3s;
+}
+
+.nav-list a:hover {
+    color: #b57d4b;
+}
+
+.nav-btn {
+    padding: 14px 24px;
+    border: 1px solid #9e7759;
+    border-radius: 999px;
+    background-color: #f7f0e7;
+}
+
+/* Hero */
+.hero {
+    min-height: 86vh;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(rgba(44, 28, 18, 0.45), rgba(44, 28, 18, 0.45)),
+        url("../images/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    min-height: 86vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 760px;
+    color: #fff7ef;
+}
+
+.hero-text h1 {
+    font-size: 150px;
+    line-height: 0.9;
+    margin-bottom: 28px;
+}
+
+.hero-text p {
+    font-size: 30px;
+    max-width: 900px;
+    margin-bottom: 34px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #bc8754;
+    color: white;
+    padding: 18px 34px;
+    border-radius: 999px;
+    font-size: 22px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #a77548;
+}
+
+/* About */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.about-card img {
+    height: 320px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.feature-item {
+    background-color: #fbf6f1;
+    border: 1px solid #e7dbd0;
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #654838;
+}
+
+/* Menu */
+.sub-title {
+    font-size: 38px;
+    margin: 25px 0 24px;
+    color: #5b3628;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.menu-card {
+    background-color: #fcf8f4;
+    border: 1px solid #eadfd4;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(80, 52, 35, 0.07);
+}
+
+.menu-card img {
+    height: 240px;
+}
+
+.card-body {
+    padding: 18px;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.card-top h4 {
+    font-size: 28px;
+    color: #4f3124;
+}
+
+.card-top span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #7b583f;
+}
+
+.card-body p {
+    font-size: 17px;
+    color: #6d5548;
+}
+
+/* Baristas */
+.baristas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.barista-card {
+    background-color: #fcf8f4;
+    border: 1px solid #eadfd4;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(80, 52, 35, 0.07);
+}
+
+.barista-card img {
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.barista-body {
+    padding: 20px;
+}
+
+.barista-body h4 {
+    font-size: 28px;
+    color: #4f3124;
+    margin-bottom: 8px;
+}
+
+.barista-body span {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #b57d4b;
+    font-weight: 600;
+}
+
+.barista-body p {
+    font-size: 17px;
+    color: #6d5548;
+    line-height: 1.6;
+}
+
+/* Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.gallery-grid img {
+    height: 240px;
+}
+
+/* Prices */
+.prices-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 24px;
+    align-items: stretch;
+}
+
+.prices-list h2 {
+    font-size: 48px;
+    margin-bottom: 18px;
+    color: #5b3628;
+}
+
+.price-box {
+    background-color: #fcf8f4;
+    border: 1px solid #eadfd4;
+    border-radius: 22px;
+    padding: 24px;
+}
+
+.price-box p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    padding: 13px 0;
+    border-bottom: 1px solid #e9ddd2;
+    font-size: 21px;
+    color: #523428;
+}
+
+.price-box p:last-child {
+    border-bottom: none;
+}
+
+.promo-box {
+    min-height: 380px;
+    border-radius: 24px;
+    padding: 38px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:
+        linear-gradient(rgba(72, 43, 27, 0.45), rgba(72, 43, 27, 0.45)),
+        url("../images/cappuccino.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.promo-box h3 {
+    font-size: 54px;
+    margin-bottom: 14px;
+}
+
+.promo-box p {
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+/* Contacts */
+.contacts-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.contacts-info {
+    background-color: #fcf8f4;
+    border: 1px solid #eadfd4;
+    border-radius: 22px;
+    padding: 28px;
+}
+
+.contacts-info h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #5b3628;
+}
+
+.contacts-info p {
+    font-size: 18px;
+    color: #674c3d;
+    margin-bottom: 10px;
+}
+
+.branch-list {
+    margin-bottom: 20px;
+}
+
+.branch-item {
+    background-color: #f7efe7;
+    border: 1px solid #eadfd4;
+    border-radius: 16px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+}
+
+.branch-item h4 {
+    font-size: 23px;
+    margin-bottom: 6px;
+    color: #4f3124;
+}
+
+.branch-item p {
+    margin-bottom: 0;
+    font-size: 17px;
+    color: #6a4f40;
+}
+
+.contacts-map img {
+    height: 100%;
+    min-height: 620px;
+    border-radius: 22px;
+}
+
+/* Footer */
+.footer {
+    background-color: #e9ddd2;
+    border-top: 1px solid #dacbbd;
+    text-align: center;
+    padding: 24px 0;
+    color: #5d4335;
+    font-size: 17px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .logo {
+        font-size: 48px;
+    }
+
+    .hero-text h1 {
+        font-size: 110px;
+    }
+
+    .hero-text p {
+        font-size: 24px;
+    }
+
+    .cards-grid,
+    .baristas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .header-container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 18px 0;
+    }
+
+    .nav-list {
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .about-grid,
+    .features,
+    .prices-layout,
+    .contacts-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .contacts-map img {
+        min-height: 380px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 60px 0;
+    }
+
+    .logo {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .nav-list a {
+        font-size: 18px;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+
+    .hero-content {
+        min-height: 75vh;
+    }
+
+    .hero-text h1 {
+        font-size: 76px;
+    }
+
+    .hero-text p {
+        font-size: 22px;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 15px 26px;
+    }
+
+    .section-heading h2,
+    .prices-list h2,
+    .contacts-info h2 {
+        font-size: 36px;
+    }
+
+    .sub-title {
+        font-size: 30px;
+    }
+
+    .cards-grid,
+    .gallery-grid,
+    .baristas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-card img,
+    .gallery-grid img,
+    .about-card img,
+    .barista-card img {
+        height: 220px;
+    }
+
+    .contacts-map img {
+        min-height: 300px;
+    }
+}
