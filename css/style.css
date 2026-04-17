@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -147,10 +151,29 @@ ul {
     font-size: 22px;
     font-weight: 600;
     transition: 0.3s;
+    border: none;
+    cursor: pointer;
 }
 
 .btn:hover {
     background-color: #a77548;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    border: 2px solid #fff7ef;
+    color: #fff7ef;
+}
+
+.secondary-btn:hover {
+    background-color: #fff7ef;
+    color: #5b3628;
 }
 
 /* About */
@@ -233,6 +256,15 @@ ul {
 .card-body p {
     font-size: 17px;
     color: #6d5548;
+}
+
+.coffee-item {
+    cursor: pointer;
+}
+
+.coffee-item.active-card {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(80, 52, 35, 0.18);
 }
 
 /* Baristas */
@@ -408,6 +440,12 @@ ul {
     height: 100%;
     min-height: 620px;
     border-radius: 22px;
+}
+
+#currentDate {
+    margin-top: 12px;
+    font-weight: 600;
+    color: #8a5f42;
 }
 
 /* Footer */

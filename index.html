@@ -31,8 +31,12 @@
             <div class="container hero-content">
                 <div class="hero-text">
                     <h1>Coffee<br>House</h1>
-                    <p>Затишна кав’ярня з ароматною кавою, свіжими десертами та смачними сніданками</p>
-                    <a href="#menu" class="btn">Переглянути меню</a>
+                    <p id="heroMessage">Затишна кав’ярня з ароматною кавою, свіжими десертами та смачними сніданками</p>
+
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn" id="menuBtn">Переглянути меню</a>
+                        <a href="#prices" class="btn secondary-btn" id="discountBtn">Отримати знижку</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -74,7 +78,7 @@
 
                 <h3 class="sub-title">Кава</h3>
                 <div class="cards-grid">
-                    <article class="menu-card">
+                    <article class="menu-card coffee-item" data-name="Еспресо">
                         <img src="images/espresso.jpg" alt="Еспресо">
                         <div class="card-body">
                             <div class="card-top">
@@ -85,7 +89,7 @@
                         </div>
                     </article>
 
-                    <article class="menu-card">
+                    <article class="menu-card coffee-item" data-name="Американо">
                         <img src="images/americano.jpg" alt="Американо">
                         <div class="card-body">
                             <div class="card-top">
@@ -96,7 +100,7 @@
                         </div>
                     </article>
 
-                    <article class="menu-card">
+                    <article class="menu-card coffee-item" data-name="Капучино">
                         <img src="images/cappuccino.jpg" alt="Капучино">
                         <div class="card-body">
                             <div class="card-top">
@@ -107,7 +111,7 @@
                         </div>
                     </article>
 
-                    <article class="menu-card">
+                    <article class="menu-card coffee-item" data-name="Лате">
                         <img src="images/latte.jpg" alt="Лате">
                         <div class="card-body">
                             <div class="card-top">
@@ -118,7 +122,7 @@
                         </div>
                     </article>
 
-                    <article class="menu-card">
+                    <article class="menu-card coffee-item" data-name="Флет Вайт">
                         <img src="images/flatwhite.jpg" alt="Флет Вайт">
                         <div class="card-body">
                             <div class="card-top">
@@ -129,7 +133,7 @@
                         </div>
                     </article>
 
-                    <article class="menu-card">
+                    <article class="menu-card coffee-item" data-name="Раф кава">
                         <img src="images/raf.jpg" alt="Раф кава">
                         <div class="card-body">
                             <div class="card-top">
@@ -345,7 +349,7 @@
                 <div class="promo-box">
                     <h3>-15% знижка</h3>
                     <p>на ранкове меню з 8:00 до 11:00</p>
-                    <a href="#contacts" class="btn">Замовити</a>
+                    <a href="#contacts" class="btn" id="orderBtn">Замовити</a>
                 </div>
             </div>
         </section>
@@ -355,6 +359,7 @@
                 <div class="section-heading">
                     <h2>Наші кав’ярні в Києві</h2>
                     <p>Ми маємо кілька локацій у Києві, тому ви можете обрати найближчу кав’ярню.</p>
+                    <p id="currentDate"></p>
                 </div>
 
                 <div class="contacts-layout">
@@ -412,5 +417,6 @@
         </div>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
